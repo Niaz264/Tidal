@@ -1,4 +1,5 @@
 import os
+# Flask needed for Scalingo only!
 from flask import Flask, request
 from flask_restful import Resource, Api
 
@@ -7,7 +8,7 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return 'Hello World!'
+        return 'Bot is up & working'
 
 api.add_resource(Greeting, '/') # Route_1
 app.run(host='0.0.0.0', port=os.environ.get('PORT', 8080))
