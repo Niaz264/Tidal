@@ -1,1 +1,4 @@
-python3 -m bot
+python3 clever.py & python3 -m bot
+
+
+
