@@ -14,3 +14,4 @@ PyQt5==5.15.7
 qt-material==2.12
 flask
 flask_restful
+psycopg2
